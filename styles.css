@@ -1,5 +1,4 @@
 /* Estilo para o header e footer */
-
 header, footer {
     background-color: #333; /* Cor do fundo */
     color: #fff; /* Cor do texto */
@@ -8,35 +7,59 @@ header, footer {
 }
 
 header nav ul {
-    padding: 0; /* Remove o espaçamento interno */
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove espaçamento interno */
 }
 
 header nav ul li {
-    display: inline; /* Mostra os itens da lista em linha */
+    display: inline; /* Exibe os itens da lista em linha */
     margin-right: 10px; /* Espaçamento à direita dos itens */
 }
 
 header nav ul li a {
     color: #fff; /* Cor do texto dos links */
-    text-decoration: none; /* Remove o sublinhado dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
 }
 
 header nav ul li a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o cursor */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
-
-
 
 /* Estilo para a seção principal */
-
 section {
-    display: flex; /* Usa flexbox para organizar os elementos */
-    justify-content: space-between; /* Espaça os elementos igualmente */
-    padding: 20px; /* Espaçamento interno */
+    display: flex;
+    flex-direction: column; /* Empilhar elementos verticalmente */
+    align-items: center;
+    padding: 20px;
+    gap: 20px; /* Espaço entre os elementos */
 }
 
+/* Container para alinhar a seção "Bem-vindo!" e "Related Links" lado a lado */
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Para ocupar toda a largura da section */
+    max-width: 900px; /* Limita a largura para manter um layout responsivo */
+}
+
+/* Ajusta os artigos e a barra lateral */
+.content-container > div {
+    flex: 1; /* Ambos os elementos ocupam espaço igual */
+}
+
+/* Garante que o formulário fique abaixo das divs acima */
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+
+
 article {
-    flex: 3; /* Define a proporção do espaço ocupado */
+    flex: 3; /* Define a proporção de espaço ocupado */
     margin-right: 20px; /* Espaçamento à direita */
 }
 
@@ -59,17 +82,22 @@ aside ul li a {
 }
 
 aside ul li a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o cursor */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
 
-
-
-
 /* Estilo para o formulário de contato */
+.contact-form-container {
+    display: flex; /* Usa flexbox para centralizar o formulário */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 150px; /* Espaçamento superior */
+    width: 50%; /* Largura do formulário */
+}
 
 .contact-form {
     display: flex; /* Usa flexbox para organizar os elementos */
     flex-direction: column; /* Organiza os elementos em coluna */
+    width: 50%; /* Define a largura do formulário */
 }
 
 .contact-form label {
@@ -95,13 +123,13 @@ aside ul li a:hover {
 .contact-form button {
     margin-top: 10px; /* Espaçamento superior */
     padding: 10px; /* Espaçamento interno */
-    background-color: #333; /* Cor do fundo */
+    background-color: #333; /* Cor de fundo */
     color: #fff; /* Cor do texto */
-    border: none; /* Remove a borda */
+    border: none; /* Remove borda */
     border-radius: 5px; /* Bordas arredondadas */
     cursor: pointer; /* Cursor de ponteiro */
 }
 
 .contact-form button:hover {
-    background-color: #555; /* Cor do fundo ao passar o cursor */
+    background-color: #555; /* Cor de fundo ao passar o mouse */
 }

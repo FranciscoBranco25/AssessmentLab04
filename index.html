@@ -19,43 +19,44 @@
         </header>
     </div>
 
-    <section> <!-- Seção principal do conteúdo -->
-
-        <div>
-            <article> <!-- Artigo principal -->
-                <h2>Bem-vindo!</h2>
-                <p>Website criado com o proposito de realizar o Assessment Lab HTML-04 na disciplina de Programação Web. </p>
-            </article>
+    <section>
+        <div class="content-container"> <!-- Novo container -->
+            <div>
+                <article>
+                    <h2>Bem-vindo!</h2>
+                    <p>Website criado com o propósito de realizar o Assessment Lab HTML-04 na disciplina de Programação Web.</p>
+                </article>
+            </div>
+    
+            <div>
+                <aside>
+                    <h3>Related Links</h3>
+                    <ul>
+                        <li><a href="index.html">lateral 1</a></li>
+                        <li><a href="index.html">lateral 2</a></li>
+                        <li><a href="index.html">lateral 3</a></li>
+                    </ul>
+                </aside>
+            </div>
         </div>
-
-        <div>
-            <aside> <!-- Barra lateral -->
-                <h3>Related Links</h3>
-                <ul>
-                    <li><a href="index.html">lateral 1</a></li>
-                    <li><a href="index.html">lateral 2</a></li>
-                    <li><a href="index.html">lateral 3</a></li>
-                </ul>
-            </aside>
-        </div>
-
-        <div> <!-- Formulário de contacto -->
+    
+        <div class="contact-form-container">
             <form action="#" method="post" class="contact-form">
                 <h3>Contact Us</h3>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required> <!-- Campo para nome -->
-
+                <input type="text" id="name" name="name" required>
+    
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required> <!-- Campo para email -->
-
+                <input type="email" id="email" name="email" required>
+    
                 <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea> <!-- Campo para mensagem -->
-
-                <button type="submit">Send Message</button> <!-- Botão de submissão -->
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">Send Message</button>
             </form>
         </div>
-
     </section>
+    
 
     <footer> <!-- Rodapé do site -->
         <p> Todos os direitos reservados &copy; 2025. </p>
